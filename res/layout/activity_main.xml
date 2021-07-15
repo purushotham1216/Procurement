@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#729EECB7"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/textViewName"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/almendra_bold_italic"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Welcome:"
+            android:textColor="#1A5DAF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:fontFamily="@font/alfa_slab_one"
+            android:gravity="bottom|center_horizontal"
+            android:text="DashBoard"
+            android:textColor="#094564"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cptd_today_tag_details"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="#DFCF38"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/artifika"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:text="Tag Details Entered Today"
+                        android:textColor="#24530F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/today_entries_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/artifika"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Entries toady"
+                        android:background="#FFFFFF"
+                        android:textColor="#24530F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cptd_total_tag_entries"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#BEDB382D">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Number Of Units for Which Tag Number Entries"
+                        android:textColor="#0F1E53"
+                        android:fontFamily="@font/artifika"
+                        android:paddingLeft="10dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/total_entries_on_sheep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="total_entries"
+                        android:textColor="#0F1E53"
+                        android:fontFamily="@font/artifika"
+                        android:layout_marginTop="15dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cptd_docs_uploaded"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="#DDD79E"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Number Of Insurance Documents Uploaded"
+                        android:textColor="#EE0858"
+                        android:fontFamily="@font/artifika"
+                        android:paddingLeft="10dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/insurance_uploaded"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="insurance_uploaded"
+                        android:textColor="#EE0858"
+                        android:fontFamily="@font/artifika"
+                        android:layout_marginTop="15dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cptd_docs_pend_upload"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#CE3F90C0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Number of Insurance Documents Pending to Upload"
+                        android:textColor="#D80A0A"
+                        android:fontFamily="@font/artifika"
+                        android:paddingLeft="10dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/insurance_uploaded_pend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="insurance upload pending"
+                        android:textColor="#D80A0A"
+                        android:fontFamily="@font/artifika"
+                        android:background="#FFFFFF"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

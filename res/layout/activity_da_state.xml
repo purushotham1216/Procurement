@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#727ECCA9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/da_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/textViewName"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/almendra_bold_italic"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="Welcome:"
+            android:textColor="#1A5DAF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:fontFamily="@font/alfa_slab_one"
+            android:gravity="bottom|center_horizontal"
+            android:text="DashBoard"
+            android:textColor="#094564"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cptd_today_tag_details"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/artifika"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:text="Tag Details Entered Today"
+                        android:textColor="#D80A0A"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/da_today_entries"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/artifika"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Entries toady"
+                        android:background="#FFFFFF"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/da_total_tag_entries"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Number Of Units for Which Tag Number Entries"
+                        android:textColor="#0F1E53"
+                        android:fontFamily="@font/artifika"
+                        android:paddingLeft="10dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/da_total_entries"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="total_entries"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/artifika"
+                        android:layout_marginTop="15dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/da_docs_uploaded"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Number Of Insurance Documents Uploaded"
+                        android:textColor="#0F1E53"
+                        android:fontFamily="@font/artifika"
+                        android:paddingLeft="10dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/da_insu_docs_upload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="insurance_uploaded"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/artifika"
+                        android:layout_marginTop="15dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/da_docs_pend_upload"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Number of Insurance Documents Pending to Upload"
+                        android:textColor="#D80A0A"
+                        android:fontFamily="@font/artifika"
+                        android:paddingLeft="10dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/da_insu_docs_upload_pend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="insurance upload pending"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/artifika"
+                        android:background="#FFFFFF"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/da_today_tag_details"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/artifika"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:text="Units Grounded"
+                        android:textColor="#D80A0A"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/da_grounded_units"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/artifika"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:text="Units grounded"
+                        android:background="#FFFFFF"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cptd_total_tag_entries"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arrival Certificates Pending"
+                        android:textColor="#0F1E53"
+                        android:fontFamily="@font/artifika"
+                        android:paddingLeft="10dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/da_arrival_cert_pend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arrival Certificates"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/artifika"
+                        android:layout_marginTop="15dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cptd_docs_uploaded"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginLeft="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Units Send for Insuance"
+                        android:textColor="#0F1E53"
+                        android:fontFamily="@font/artifika"
+                        android:paddingLeft="10dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/da_sent_insurance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Send insurances"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/artifika"
+                        android:layout_marginTop="15dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cptd_docs_pend_upload"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Number of Policies Generated"
+                        android:textColor="#D80A0A"
+                        android:fontFamily="@font/artifika"
+                        android:paddingLeft="10dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/da_num_policies_generated"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="policies generated"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/artifika"
+                        android:background="#FFFFFF"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

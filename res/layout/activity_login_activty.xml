@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#CAE0F7"
+    tools:context=".LoginActivty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/add_contact"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:text="Login Here"
+            android:textColor="#607ABD"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+  <!--  <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="100"
+        app:errorEnabled="true">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Email"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittext"
+        android:inputType="textEmailAddress">
+
+    </com.google.android.material.textfield.TextInputEditText>-->
+
+<!--
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:counterMaxLength="20"
+        app:errorEnabled="true">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Password"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittext"
+        android:inputType="textPassword">
+
+    </com.google.android.material.textfield.TextInputEditText>-->
+    <EditText
+        android:id="@+id/login_user_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawablePadding="10dp"
+        android:hint="User ID"
+        android:background="@drawable/edittext"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:background="@drawable/edittext"
+        android:inputType="textPassword"
+        android:padding="15dp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:textSize="30sp"
+            android:background="@drawable/buttonshape"
+            android:backgroundTint="#213757"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
